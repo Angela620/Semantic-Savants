@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIET Mentorship Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SLIET Mentorship Platform</h1>
+        <p>Connect with our faculty mentors for guidance.</p>
+    </header>
+
+    <main>
+        <section id="faculty-profiles">
+            <h2>Faculty Mentors</h2>
+            <div class="profile" id="mentor1">
+                <h3>Dr. John Doe</h3>
+                <p>Expert in AI and Machine Learning</p>
+                <button onclick="toggleAvailability('mentor1')">Check Availability</button>
+                <div class="availability" id="availability-mentor1">
+                    <p>Available Slots: 10 AM - 12 PM</p>
+                    <button onclick="bookSlot('mentor1', '10 AM')">Book 10 AM</button>
+                    <button onclick="bookSlot('mentor1', '11 AM')">Book 11 AM</button>
+                </div>
+            </div>
+            <!-- Repeat for other mentors -->
+        </section>
+
+        <section id="chat">
+            <h2>Chat with Mentor</h2>
+            <textarea id="chatInput" placeholder="Type your message..."></textarea>
+            <button onclick="sendMessage()">Send</button>
+            <div id="chatOutput"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SLIET Mentorship Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
